@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://avatars.githubusercontent.com/u/110414565?s=96&v=4"/>
+  <link href="/input.css" rel="stylesheet">
+  <title>Task Time Counter</title>
+  <script src="index.js"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="flex items-center justify-center min-h-screen">
+      <div class="p-8 bg-white rounded-lg shadow-md">
+        <h1 class="mb-6 text-4xl font-bold">Task Time Counter</h1>
+        <div class="flex items-center mb-4">
+          <input type="text" id="taskName" class="flex-1 px-4 py-2 border border-gray-400 rounded-l-md" placeholder="Enter task name...">
+          <button id="startStopBtn" class="px-4 py-2 text-white bg-green-500 rounded-r-md">Start</button>
+        </div>
+        <div id="timerDisplay" class="mb-4 text-5xl font-bold">00:00:00</div>
+        <button id="stopBtn" class="hidden px-4 py-2 text-white bg-red-500 rounded-md">Stop</button>
+        <p class="text-sm" id="startDateTime"></p>
+        <div class="mt-6">
+          <h2 class="mb-2 text-xl font-bold">Task History</h2>
+          <table class="w-full border-collapse">
+            <thead>
+                <tr class="bg-gray-200">
+                    <th class="px-4 py-2">Task</th>
+                    <th class="px-4 py-2">Date & Day Started</th>
+                    <th class="px-4 py-2">Time Started On</th>
+                    <th class="px-4 py-2">Date Ended</th>
+                    <th class="px-4 py-2">Time Spent</th>
+                  </tr>
+            </thead>
+            <tbody id="taskHistoryTableBody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+</body>
+</html>
